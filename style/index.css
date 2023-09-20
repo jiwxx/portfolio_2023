@@ -1,0 +1,114 @@
+/* header */
+.main_bg {} /* 배경넣기 */
+header {
+    margin:0 auto;
+    text-align: center;
+    width:calc(100% - 70px);
+    position: fixed;
+    z-index: 100;
+}
+header nav {}
+header nav .gnb {
+    margin-top:30px;
+    padding-bottom: 20px ;
+    border-bottom: 2px solid #000;
+}
+header nav .gnb a {
+    font-family: 'NeoDunggeunmoPro-Regular';
+    font-size: 2.3rem;
+    margin-left: 50px;
+}
+header nav .gnb a:first-child {margin-left: 0;}
+header nav .gnb .smile {}
+header nav .gnb .smile img {}
+/* main */
+main {
+    width:calc(100% - 70px); margin:0 auto;
+    padding-top: 100px;
+}
+/* cloud */
+main .cloud {
+    width: 100px; height: 100px;
+    display: flex; flex-flow: column nowrap;
+    position:absolute; top:30%; right:0; position: fixed;
+}
+main .cloud img {width: 100%;}
+/* section 1 */
+main .section {z-index: 90; padding-top: 70px; height: 100vh; width:100%;}
+main .section1 {} 
+main .section1 .home_bg {
+    width:1236px; height: 793px;
+    background-image: url(../images/main-home.png);
+    background-repeat: no-repeat;
+    /* background-color: pink; */
+    position:absolute; left:50%; transform: translateX(-50%);
+}
+ /*section 2  */
+main .section2 {}
+main .section2 h1 {text-align: center;}
+main .section2 h1 img {}
+main .section2 .skill {}
+main .section2 .skill .sk_left {}
+main .section2 .skill .sk_left ul {}
+main .section2 .skill .sk_left ul li {}
+main .section2 .skill .sk_left ul li span {}
+main .section2 .skill .sk_left ul li .icon {}
+main .section2 .skill .sk_left ul li .icon img {}
+main .section2 .skill .sk_left ul li .contents {font-size: 1.15rem; line-height: 30px;}
+main .section2 .skill .sk_right {}
+main .section2 .skill .sk_right ul {}
+main .section2 .skill .sk_right ul li {}
+main .section2 .skill .sk_right ul li span {}
+main .section2 .skill .sk_right ul li .icon {}
+main .section2 .skill .sk_right ul li .icon img {}
+main .section2 .skill .sk_right ul li .contents {font-size: 1.15rem; line-height: 30px;}
+/* section 3 */
+main .section3 {}
+main .section3 h1 {}
+main .section3 h1 img {}
+main .section3 .profile {}
+main .section3 .profile .pf_left {}
+main .section3 .profile .pf_left .pro_img {}
+main .section3 .profile .pf_left .pro_img img {}
+main .section3 .profile .pf_left .pro_con1 {}
+main .section3 .profile .pf_left .pro_con1 h2 {}
+main .section3 .profile .pf_left .pro_con1 p {}
+main .section3 .profile .pf_left .pro_con2 {}
+main .section3 .profile .pf_left .pro_con2 h2 {}
+main .section3 .profile .pf_left .pro_con2 p {}
+main .section3 .profile .pf_right {}
+main .section3 .profile .pf_right .pf_rightTop {}
+main .section3 .profile .pf_right .pf_rightTop h2 {}
+main .section3 .profile .pf_right .pf_rightTop ul {}
+main .section3 .profile .pf_right .pf_rightTop ul li {}
+main .section3 .profile .pf_right .pf_rightTop ul li span {}
+main .section3 .profile .pf_right .pf_rightTop ul li .pf_date {}
+main .section3 .profile .pf_right .pf_rightTop ul li .pf_contents {}
+main .section3 .profile .pf_right .pf_rightBtm {}
+main .section3 .profile .pf_right .pf_rightBtm h2 {}
+main .section3 .profile .pf_right .pf_rightBtm ul {}
+main .section3 .profile .pf_right .pf_rightBtm ul li {}
+main .section3 .profile .pf_right .pf_rightBtm ul li span {}
+main .section3 .profile .pf_right .pf_rightBtm ul li .pf_date {}
+main .section3 .profile .pf_right .pf_rightBtm ul li .pf_contents {}
+/* section 4 */
+main .section4 {}
+main .section4 .webDesign {}
+main .section4 .webDesign .webD_bg {}
+/* section 5 */
+main .section5 {}
+main .section5 .vansHtml {}
+main .section5 .vansHtml h1 {}
+main .section5 .vansHtml .vans_link {}
+main .section5 .vansHtml .vans_link a {}
+main .section5 .vMockup {}/* 목업 수정 필요 */
+main .section5 .vMockup img {}
+main .section5 .Contents {}
+main .section5 .Contents p {}
+/* section 6 */
+main .section6 {}
+main .section6 h1 {}
+main .section6 .snsDesign {}
+main .section6 .snsDesign h2 {}
+main .section6 .snsDesign .snsWrap {}
+/* 스와이퍼 슬라이드 */
