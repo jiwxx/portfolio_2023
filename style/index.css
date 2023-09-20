@@ -1,9 +1,14 @@
 /* header */
-.main_bg {} /* 배경넣기 */
+.main_bg {
+    background: url(../images/main_background.png) no-repeat;
+    background-size: cover;
+    width:1920px;
+    background-attachment: fixed;
+} /* 배경넣기 */
 header {
     margin:0 auto;
-    text-align: center;
     width:calc(100% - 70px);
+    text-align: center;
     position: fixed;
     z-index: 100;
 }
