@@ -208,9 +208,27 @@
     <script>
         $('#portfolio_wrap').fullpage({
             scrollBar:true,
-            scrollingSpeed:1500, //스크롤 속도
+            scrollingSpeed:200, //스크롤 속도
+            'onLeave':function(index,nextIndex){
+                /*if(index <= 1 ){
+                    for(let i of cloud){i.classList.remove('animaition')}
+                }*/
+                if(index == 1){
+                    cloud[0].classList.toggle('animation')
+                } else if(index == 1 && direction == 'down'){
+                    cloud[0].classList.remove('animation')
+                }
+                if (index == 2){
+                    cloud[1].classList.toggle('animation')
+                }
+                if (index == 3){
+                    cloud[2].classList.toggle('animation')
+                }
+                if (index == 5){
+                    cloud[3].classList.toggle('animation')
+                }
+            }
         })
-
         const sns_slide = new Swiper('#sns_slide',{
             slidesPerView:3,
             loop:true,

@@ -33,7 +33,7 @@ header nav .gnb a .smile {
 }
 header nav .gnb a .smile img {}
 /* toggle */
-nav .gnb span .active {display:inline-block !important;}
+nav .gnb span.active {display:inline-block !important;}
 /* main */
 main {
     width:calc(100% - 70px); margin:0 auto;
@@ -54,7 +54,7 @@ main .cloud a img {width: 100%;}
     100% {transform:translateY(15px);}
 }
 /* toggle */
-main .animation {animation:move 0.8s linear alternate infinite;}
+main .animation {animation:move 0.8s linear alternate infinite !important;}
 /* section 1 */
 main .section {z-index: 90; height: 100vh; width:100%; padding-top:20px ;}
 main .section1 {/* background-color: tan; */padding-top:50px ;} 

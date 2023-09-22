@@ -18,12 +18,12 @@ title.forEach(function(t,i){
 // })
 window.addEventListener('scroll',function(){
     console.log(window.pageYOffset)
-    if(this.window.pageYOffset > 0){
-        cloud[0].style.animation = 'move 0.8s ease alternate infinite'}
-    if(this.window.pageYOffset > 1900){
-        cloud[1].style.animation = 'move 0.8s ease alternate infinite'}
-    if(this.window.pageYOffset > 2990){
-        cloud[2].style.animation = 'move 0.8s ease alternate infinite'}
-    if(this.window.pageYOffset > 4800){
-        cloud[3].style.animation = 'move 0.8s ease alternate infinite'}
+    // if(this.window.pageYOffset > 0){
+    //     cloud[0].style.animation = 'move 0.8s ease alternate infinite'}
+    // if(this.window.pageYOffset > 1900){
+    //     cloud[1].style.animation = 'move 0.8s ease alternate infinite'}
+    // if(this.window.pageYOffset > 2990){
+    //     cloud[2].style.animation = 'move 0.8s ease alternate infinite'}
+    // if(this.window.pageYOffset > 4800){
+    //     cloud[3].style.animation = 'move 0.8s ease alternate infinite'}
 })
