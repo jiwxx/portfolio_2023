@@ -5,7 +5,6 @@ console.log (smile,title)
 for(let i of smile){i.style.display='none'}
 title.forEach(function(t,i){
     t.addEventListener('click',function(){
-        for(let j of smile){j.classList.remove('active')}
         smile[i].classList.toggle('active')
     })
 })

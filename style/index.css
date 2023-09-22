@@ -1,10 +1,9 @@
-.active {display: block;}
 /* header */
 .main_bg {
     background: url(../images/main_background.png) no-repeat;
     background-size: cover;
-    width:1920px;
     background-attachment: fixed;
+    width:100%;
 } /* 배경넣기 */
 header {
     margin:0 auto;
@@ -167,3 +166,5 @@ main .section6 .snsDesign #snsWrap .swiper-button-prev::after,
 main .section6 .snsDesign #snsWrap .swiper-button-next::after {display: none;}
 main .section6 .snsDesign #snsWrap .swiper-button-prev,
 main .section6 .snsDesign #snsWrap .swiper-button-next {position:absolute; top:55%;}
+/* toggle */
+.active {display: block !important;}
