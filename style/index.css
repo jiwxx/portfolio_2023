@@ -51,8 +51,10 @@ main .cloud a {}
 main .cloud a img {width: 100%;}
 @keyframes move {
     0% {transform:translateY(0px);}
-    100% {transform:translateY(20px);}
+    100% {transform:translateY(15px);}
 }
+/* toggle */
+main .animation {animation:move 0.8s linear alternate infinite;}
 /* section 1 */
 main .section {z-index: 90; height: 100vh; width:100%; padding-top:20px ;}
 main .section1 {/* background-color: tan; */padding-top:50px ;} 
