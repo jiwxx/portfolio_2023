@@ -9,24 +9,23 @@
     <!-- 파비콘 -->
     <link rel="shortcut icon" href="./portfolio_favicon.ico" type="image/x-icon">
     <link rel="icon" href="./portfolio_favicon.ico" type="image/x-icon">
+    <!-- swiper slide -->
+    <!-- fullpage 플러그인 css(필수) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./style/jquery.fullPage.css">
     <!-- style -->
     <link rel="stylesheet" href="./style/reset.css">
     <link rel="stylesheet" href="./style/index.css">
-    <!-- swiper slide -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <!-- fullpage 플러그인 css(필수) -->
-    <link rel="stylesheet" href="./style/jquery.fullPage.css">
 </head>
 <body>
     <div class="main_bg">
         <header>
             <nav>
                 <div class="gnb">
-                    <a href="#"><span class="title">HOME</span><span class="smile"><img src="./images/icon/icon_smile.png" alt=""></span></a> 
-                    <a href="#"><span class="title">PROFILE</span><span class="smile"><img src="./images/icon/icon_smile.png" alt=""></span></a> 
-                    <a href="#"><span class="title">PROJECT-Web</span><span class="smile"><img src="./images/icon/icon_smile.png" alt=""></span></a>
-                    <a href="#"><span class="title">PROJECT-Design</span><span class="smile"><img src="./images/icon/icon_smile.png" alt=""></span></a>
+                    <a href="#home_section"><span class="title">HOME</span><span class="smile"><img src="./images/icon/icon_smile.png" alt=""></span></a> 
+                    <a href="#profile_section"><span class="title">PROFILE</span><span class="smile"><img src="./images/icon/icon_smile.png" alt=""></span></a> 
+                    <a href="#web_section"><span class="title">PROJECT-Web</span><span class="smile"><img src="./images/icon/icon_smile.png" alt=""></span></a>
+                    <a href="#sns_section"><span class="title">PROJECT-Design</span><span class="smile"><img src="./images/icon/icon_smile.png" alt=""></span></a>
                 </div>
             </nav>
         </header>
@@ -38,10 +37,10 @@
                 <a href="#"><img src="./images/cloud.png" alt="project-design"></a>
             </div>
             <div id="portfolio_wrap">
-                <div class="section section1">
+                <div class="section section1" id="home_section">
                     <div class="home_bg"></div>
                 </div>
-                <div class="section section2">
+                <div class="section section2" id="skill_section">
                     <h1><img src="./images/skill.png" alt="스킬"></h1>
                     <div class="skill">
                         <ul class="container">
@@ -86,7 +85,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="section section3">
+                <div class="section section3" id="profile_section">
                     <h1><img src="./images/Profile.png" alt="프로필"></h1>
                     <div class="profile">
                         <div class="pf_left">
@@ -148,7 +147,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="section section4">
+                <div class="section section4" id="web_section">
                     <div class="webDesign">
                         <div class="webD_bg"></div>
                     </div>
@@ -172,7 +171,7 @@
                         </div> 
                     </div>
                 </div>
-                <div class="section section6">
+                <div class="section section6" id="sns_section">
                     <h1><img src="./images/etc.png" alt=""></h1>
                     <div class="snsDesign">
                         <h2>SNS 디자인</h2>
@@ -203,7 +202,9 @@
     <!-- fullpage 플러그인 Js(필수) -->
     <!-- cdnjs jquery 주소파일이 먼저 작성되어 있어야함!! -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="./script/jquery.fullPage.js"></script>
+    <script src="./script/index.js"></script>
     <script>
         $('#portfolio_wrap').fullpage({
             scrollBar:true,
@@ -219,6 +220,5 @@
             },
         })
     </script>
-    <script src="./script/index.js"></script>
 </body>
 </html>
