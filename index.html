@@ -153,9 +153,9 @@
                     </div>
                 </div> 
                 <div class="section section5">
-                    <div class="vansHtml">
+                    <div class="project project1">
                         <h1>VANS</h1>
-                        <div class="vans_link">
+                        <div class="project_link">
                             <a href="#">와이어프레임/프로토타입</a>
                             <a href="#">VANS 기획서</a>
                             <a href="#">최종프로젝트 결과</a>
@@ -165,6 +165,25 @@
                         </div>
                         <div class="vContents">
                             <p>반스 반응형웹제작(Desktop, Tablet, Mobile480 구성)</p>
+                            <p>제작 기간 : 1주 , 개인 100% 작업</p>
+                            <p>제작 페이지 : index/product list/shoes/login 총 4페이지</p>
+                            <p>사용프로그램 : photoshop,illustrator,HTML5,CSS3,Javascript,php,gunboard,git</p>
+                        </div> 
+                    </div>
+                </div>
+                <div class="section section5">
+                    <div class="project project2">
+                        <h1>YG Entertainment</h1>
+                        <div class="project_link">
+                            <a href="#">와이어프레임/프로토타입</a>
+                            <a href="#">YG 기획서</a>
+                            <a href="#">최종프로젝트 결과</a>
+                        </div>
+                        <div class="vMockup">
+                            <img src="./images/page_1.png" alt="">
+                        </div>
+                        <div class="vContents">
+                            <p>YG Entertainment 반응형웹제작(Desktop, Tablet, Mobile480 구성)</p>
                             <p>제작 기간 : 1주 , 개인 100% 작업</p>
                             <p>제작 페이지 : index/product list/shoes/login 총 4페이지</p>
                             <p>사용프로그램 : photoshop,illustrator,HTML5,CSS3,Javascript,php,gunboard,git</p>
@@ -183,12 +202,12 @@
                             <!-- .swiper-wrapper 슬라이드 한장 한장을 묶어주는 슬라이드 영역 틀 -->
                                 <div class="swiper-wrapper">
                                     <!-- .swiper-slide 슬라이드 개별 한장 부모 -->
-                                    <div class="swiper-slide"><a href="#"><img src="/images/sns_lip.jpg" alt=""></a></div>
-                                    <div class="swiper-slide"><a href="#"><img src="/images/sns_lip.jpg" alt=""></a></div>
-                                    <div class="swiper-slide"><a href="#"><img src="/images/sns_lip.jpg" alt=""></a></div>
-                                    <div class="swiper-slide"><a href="#"><img src="/images/sns_lip.jpg" alt=""></a></div>
-                                    <div class="swiper-slide"><a href="#"><img src="/images/sns_lip.jpg" alt=""></a></div>
-                                    <div class="swiper-slide"><a href="#"><img src="/images/sns_lip.jpg" alt=""></a></div>
+                                    <div class="swiper-slide"><a href="#"><img src="./images/sns_lip.jpg" alt=""></a></div>
+                                    <div class="swiper-slide"><a href="#"><img src="./images/sns_travel.png" alt=""></a></div>
+                                    <div class="swiper-slide"><a href="#"><img src="./images/sns_travel.png" alt=""></a></div>
+                                    <div class="swiper-slide"><a href="#"><img src="./images/sns_lip.jpg" alt=""></a></div>
+                                    <div class="swiper-slide"><a href="#"><img src="./images/sns_lip.jpg" alt=""></a></div>
+                                    <div class="swiper-slide"><a href="#"><img src="./images/sns_lip.jpg" alt=""></a></div>
                                 </div>
                             </div>
                             <div class="swiper-button-prev"></div>
@@ -206,26 +225,27 @@
     <script src="./script/jquery.fullPage.js"></script>
     <script src="./script/index.js"></script>
     <script>
+        const cloud = document.querySelectorAll('main > .cloud > a')
+        cloud[0].classList.toggle('animation')
         $('#portfolio_wrap').fullpage({
             scrollBar:true,
-            scrollingSpeed:200, //스크롤 속도
-            'onLeave':function(index,nextIndex){
-                /*if(index <= 1 ){
-                    for(let i of cloud){i.classList.remove('animaition')}
-                }*/
+            onLeave:function(index,nextIndex){
+                console.log(index,nextIndex)
                 if(index == 1){
-                    cloud[0].classList.toggle('animation')
-                } else if(index == 1 && direction == 'down'){
-                    cloud[0].classList.remove('animation')
+                    for(let i of cloud){i.classList.remove('animation')}
+                    cloud[1].classList.add('animation')
                 }
                 if (index == 2){
-                    cloud[1].classList.toggle('animation')
+                    for(let i of cloud){i.classList.remove('animation')}
+                    cloud[1].classList.add('animation')
                 }
                 if (index == 3){
-                    cloud[2].classList.toggle('animation')
+                    for(let i of cloud){i.classList.remove('animation')}
+                    cloud[2].classList.add('animation')
                 }
                 if (index == 5){
-                    cloud[3].classList.toggle('animation')
+                    for(let i of cloud){i.classList.remove('animation')}
+                    cloud[3].classList.add('animation')
                 }
             }
         })

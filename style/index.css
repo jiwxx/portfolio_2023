@@ -24,11 +24,11 @@ header nav .gnb a:first-child {margin-left: 0;}
 header nav .gnb a span {}
 header nav .gnb a .title {
     font-family: 'NeoDunggeunmoPro-Regular';
-    font-size: 2.3rem;
+    font-size: 2.35rem; line-height: 40px;
     margin-left: 100px;
 }
 header nav .gnb a .smile {
-    position: relative; top:12px;
+    position: relative; top:7px;
     display: none;
 }
 header nav .gnb a .smile img {}
@@ -136,12 +136,12 @@ main .section4 .webDesign .webD_bg {
 }
 /* section 5 */
 main .section5 {/* background-color: silver; */}
-main .section5 .vansHtml {}
-main .section5 .vansHtml h1 {color:#222; font-size: 3.5rem; font-weight: 800; text-align: center;}
-main .section5 .vansHtml .vans_link {text-align: center; margin-top: 70px;}
-main .section5 .vansHtml .vans_link a:hover {color:#ffcccc; background-color: #222;}
-main .section5 .vansHtml .vans_link a:first-child {margin-left: 0;}
-main .section5 .vansHtml .vans_link a {
+main .section5 .project {}
+main .section5 .project h1 {color:#222; font-size: 3.5rem; font-weight: 800; text-align: center;}
+main .section5 .project .project_link {text-align: center; margin-top: 70px;}
+main .section5 .project .project_link a:hover {color:#ffcccc; background-color: #222;}
+main .section5 .project .project_link a:first-child {margin-left: 0;}
+main .section5 .project .project_link a {
     font-size: 2.1rem; letter-spacing: 0.05em; font-weight: 800;
     border:3px solid #222; padding: 20px 15px;
     margin-left: 30px;
@@ -166,12 +166,13 @@ main .section6 .snsDesign #snsWrap {}
 /* 스와이퍼 슬라이드 */
 main .section6 .snsDesign #snsWrap #sns_slide {max-width:1440px; }
 main .section6 .snsDesign #snsWrap #sns_slide .swiper-wrapper {}
-main .section6 .snsDesign #snsWrap #sns_slide .swiper-wrapper .swiper-slide {
+main .section6 .snsDesign #snsWrap #sns_slide .swiper-wrapper .swiper-slide { 
     display: flex; flex-flow: row nowrap;
     justify-content: center;
 }
-main .section6 .snsDesign #snsWrap #sns_slide .swiper-wrapper .swiper-slide a {}
-main .section6 .snsDesign #snsWrap #sns_slide .swiper-wrapper .swiper-slide a img {width:400px; height:400px;border-radius: 10px; border:3px solid #000;}
+main .section6 .snsDesign #snsWrap #sns_slide .swiper-wrapper .swiper-slide a img:hover {transform:scale(1.1);}
+main .section6 .snsDesign #snsWrap #sns_slide .swiper-wrapper .swiper-slide a {overflow: hidden; width:400px; height:400px; border-radius: 10px; border:3px solid #000;}
+main .section6 .snsDesign #snsWrap #sns_slide .swiper-wrapper .swiper-slide a img {width:400px; height:400px; transition: all 0.3s linear;}
 main .section6 .snsDesign #snsWrap .swiper-button-prev {background:url(../images/icon/icon_prev.png) no-repeat; width: 50px; height: 50px; left:100px;}
 main .section6 .snsDesign #snsWrap .swiper-button-next {background:url(../images/icon/icon_next.png) no-repeat; width: 50px; height: 50px; right:100px;}
 main .section6 .snsDesign #snsWrap .swiper-button-prev::after,
