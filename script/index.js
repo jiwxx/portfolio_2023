@@ -1,7 +1,6 @@
 const smile = document.querySelectorAll('header > nav > .gnb > a > .smile')
 const title = document.querySelectorAll('header > nav > .gnb > a > .title')
-
-// console.log (smile,title,cloud)
+// console.log (smile,title)
 
 // for(let i of smile){i.style.display='none'}
 title.forEach(function(t,i){
@@ -10,6 +9,17 @@ title.forEach(function(t,i){
         smile[i].classList.toggle('active')
     })
 })
+
+window.addEventListener('mousemove',function(e){
+    console.log(e)
+})
+const mouseImg = document.querySelector('#mouse')
+console,log(mouseImg)
+window,addEventListener('mousemove',function(e){
+    mouseImg.style.left =`${e.clientX}px`
+    mouseImg.style.top =`${e.clientY}px`
+})
+
 
 // $(window).scroll(function(){
 //     var height = $(window).scrollTop();

@@ -1,4 +1,7 @@
-body,html {scroll-behavior: smooth;}
+body,html {scroll-behavior: smooth; 
+    /* 마우스 꾸미기 */
+    /* cursor: url('../icon_lol.png'),auto; */
+}
 /* header */
 .main_bg {
     background: url(../images/main_background.png) no-repeat;
