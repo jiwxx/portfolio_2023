@@ -189,3 +189,44 @@ main .section6 .snsDesign #snsWrap .swiper-button-prev::after,
 main .section6 .snsDesign #snsWrap .swiper-button-next::after {display: none;}
 main .section6 .snsDesign #snsWrap .swiper-button-prev,
 main .section6 .snsDesign #snsWrap .swiper-button-next {position:absolute; top:55%;}
+/* section 7 */
+main .section7 {}
+main .section7 .promotionDesign {}
+main .section7 .promotionDesign h2 {font-size: 3.2rem; letter-spacing: -0.05em; text-align: center; margin-bottom: 40px;}
+main .section7 .promotionDesign #promoWrap {}
+main .section7 .promotionDesign #promoWrap #promotion_slide {max-width:1440px;}
+main .section7 .promotionDesign #promoWrap #promotion_slide .swiper-wrapper {}
+main .section7 .promotionDesign #promoWrap #promotion_slide .swiper-wrapper .swiper-slide {
+    display: flex; flex-flow: row nowrap; justify-content: center; align-items: center;
+}
+main .section7 .promotionDesign #promoWrap #promotion_slide .swiper-wrapper .swiper-slide a:hover {}
+main .section7 .promotionDesign #promoWrap #promotion_slide .swiper-wrapper .swiper-slide a img:hover:after{opacity:0;}
+main .section7 .promotionDesign #promoWrap #promotion_slide .swiper-wrapper .swiper-slide a img::after{
+    content:'';
+    background-color:rgba(0,0,0,0.3);
+    display: block;
+    width:300px; height: 623px;
+}
+
+main .section7 .promotionDesign #promoWrap #promotion_slide .swiper-wrapper .swiper-slide a {overflow: hidden; width:300px; height: 623px; border-radius:10px; border:3px solid #000;}
+main .section7 .promotionDesign #promoWrap #promotion_slide .swiper-wrapper .swiper-slide a img {}
+main .section7 .promotionDesign #promoWrap .swiper-button-prev {background:url(../images/icon/icon_prev.png) no-repeat; width: 50px; height: 50px; left:100px;}
+main .section7 .promotionDesign #promoWrap .swiper-button-next {background:url(../images/icon/icon_next.png) no-repeat; width: 50px; height: 50px; right:100px;}
+main .section7 .promotionDesign #promoWrap .swiper-button-prev::after,
+main .section7 .promotionDesign #promoWrap .swiper-button-next::after {display: none;}
+main .section7 .promotionDesign #promoWrap .swiper-button-prev
+main .section7 .promotionDesign #promoWrap .swiper-button-next {position:absolute; top: 55%;}
+/* section 8 */
+main .section8 {}
+main .section8 .landing {}
+main .section8 .landing h2 {}
+main .section8 .landing .landingCon {}
+main .section8 .landing .landingCon img {}
+/* section 9 */
+main .section9 {}
+main .section9 .cardNews {}
+main .section9 .cardNews h2 {}
+main .section9 .cardNews .cardTop {}
+main .section9 .cardNews .cardTop img {}
+main .section9 .cardNews .cardBtm {}
+main .section9 .cardNews .cardBtm img {}

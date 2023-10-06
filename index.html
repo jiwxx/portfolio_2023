@@ -237,6 +237,55 @@
                         </div>
                     </div>
                 </div>
+                <div class="section section7" id="promotion_section">
+                    <div class="promotionDesign">
+                        <h2>상세페이지 프로모션 디자인</h2>
+                        <div id="promoWrap">
+                            <!-- 스와이퍼 슬라이드 넣기 -->
+                            <!-- 1. swiper-slide -->
+                            <!-- .swiper슬라이드의 전체 틀 -->
+                            <div class="swiper" id="promotion_slide">
+                            <!-- .swiper-wrapper 슬라이드 한장 한장을 묶어주는 슬라이드 영역 틀 -->
+                                <div class="swiper-wrapper">
+                                    <!-- .swiper-slide 슬라이드 개별 한장 부모 -->
+                                    <div class="swiper-slide"><a href="#"><img src="./images/promo1.jpg" alt=""></a></div>
+                                    <div class="swiper-slide"><a href="#"><img src="./images/promo1.jpg" alt=""></a></div>
+                                    <div class="swiper-slide"><a href="#"><img src="./images/promo1.jpg" alt=""></a></div>
+                                    <div class="swiper-slide"><a href="#"><!-- <img src="" alt=""> --></a></div>
+                                    <div class="swiper-slide"><a href="#"><!-- <img src="" alt=""> --></a></div>
+                                    <div class="swiper-slide"><a href="#"><!-- <img src="" alt=""> --></a></div>
+                                </div>
+                            </div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section section8" id="landing_section">
+                    <div class="landing">
+                        <h2>랜딩페이지</h2>
+                        <div class="landingCon">
+                            <img src="" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="section section9" id="cardNews_section">
+                    <div class="cardNews">
+                        <h2>카드뉴스</h2>
+                        <div class="cardTop">
+                            <img src="" alt="">
+                            <img src="" alt="">
+                            <img src="" alt="">
+                            <img src="" alt="">
+                        </div>
+                        <div class="cardBtm">
+                            <img src="" alt="">
+                            <img src="" alt="">
+                            <img src="" alt="">
+                            <img src="" alt="">
+                        </div>
+                    </div>
+                </div>
             </div>
         </main>
     </div>
@@ -277,6 +326,14 @@
             navigation: {
                 nextEl: '#snsWrap .swiper-button-next',
                 prevEl: '#snsWrap .swiper-button-prev',
+            },
+        })
+        const promotion_slide = new Swiper('#promotion_slide',{
+            slidesPerView:3,
+            loop:true,
+            navigation: {
+                nextEl: '#promoWrap .swiper-button-next',
+                prevEl: '#promoWrap .swiper-button-prev',
             },
         })
     </script>
