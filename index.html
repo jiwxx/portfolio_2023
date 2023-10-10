@@ -18,8 +18,28 @@
     <link rel="stylesheet" href="./style/index.css">
     <!-- 폰트 -->
     <link rel="stylesheet" type="text/css" href='https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css'>
+    <style>
+        #promotionPopup {
+            width:100%; height:100vh;
+            background:rgba(255,255,255,0.5);
+            position:fixed; left:0; top:0; z-index:9999;
+            display:none;
+        }
+        #promotionPopup .contents {
+            width:900px; height:80vh; overflow-y:auto;
+            background:aqua;
+            margin:100px auto 0;
+        }
+        #promotionPopup .contents img {width:100%;}
+    </style>
 </head>
 <body>
+    <!-- 프로모션 클릭 시 나타나는 팝업 -->
+    <div id="promotionPopup">
+        <div class="contents">
+            <img src="" alt="">
+        </div>
+    </div>
     <div class="main_bg">
         <header>
             <nav>
@@ -237,6 +257,7 @@
                         </div>
                     </div>
                 </div>
+                <!--  프로모션 리스트 -->
                 <div class="section section7" id="promotion_section">
                     <div class="promotionDesign">
                         <h2>상세페이지 프로모션 디자인</h2>
@@ -299,7 +320,7 @@
         const cloud = document.querySelectorAll('main > .cloud > a')
         cloud[0].classList.toggle('animation')
         $('#portfolio_wrap').fullpage({
-            scrollBar:true,
+            // scrollBar:true,
             onLeave:function(index,nextIndex){
                 console.log(index,nextIndex)
                 if(index == 1){
@@ -336,6 +357,29 @@
                 prevEl: '#promoWrap .swiper-button-prev',
             },
         })
+
+        // 프로모션 클릭 시 나타나는 팝업 스크립트
+        const promotionDesign_a = document.querySelectorAll('#promotion_slide a')
+        const promotionPopup = document.querySelector('#promotionPopup')
+        const promotionPopup_img = document.querySelector('#promotionPopup img')
+        //console.log(promotionPopup, promotionPopup_img, promotionDesign_a)
+
+        promotionDesign_a.forEach(function(t,i,a){
+            //console.log(t,i,a)
+            t.addEventListener('click',function(e){
+                e.preventDefault()
+                promotionPopup.style.display = 'block'
+                promotionPopup_img.src = `./images/promo${i+1}.jpg`
+                $.fn.fullpage.setAllowScrolling(false) //풀페이지 스크롤 해제
+            })
+        })
+
+        promotionPopup.addEventListener('click',function(){
+            promotionPopup.style.display = 'none'
+            $.fn.fullpage.setAllowScrolling(true) //풀페이지 스크롤 재개
+        })
+
+
     </script>
 </body>
 </html>
