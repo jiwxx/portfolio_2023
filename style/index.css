@@ -194,15 +194,21 @@ main .section7 {}
 main .section7 .promotionDesign {}
 main .section7 .promotionDesign h2 {font-size: 3.2rem; letter-spacing: -0.05em; text-align: center; margin-bottom: 40px;}
 main .section7 .promotionDesign #promoWrap {}
-main .section7 .promotionDesign #promoWrap #promotion_slide {max-width:1440px;}
+main .section7 .promotionDesign #promoWrap #promotion_slide {max-width:1200px;}
 main .section7 .promotionDesign #promoWrap #promotion_slide .swiper-wrapper {}
 main .section7 .promotionDesign #promoWrap #promotion_slide .swiper-wrapper .swiper-slide {
-    display: flex; flex-flow: row nowrap; justify-content: center; align-items: center;
+    display: flex; flex-flow: row nowrap; justify-content: center;
 }
-main .section7 .promotionDesign #promoWrap #promotion_slide .swiper-wrapper .swiper-slide a:hover {}
-main .section7 .promotionDesign #promoWrap #promotion_slide .swiper-wrapper .swiper-slide a img:hover:after{opacity:0;}
-main .section7 .promotionDesign #promoWrap #promotion_slide .swiper-wrapper .swiper-slide a img::after{
+main .section7 .promotionDesign #promoWrap #promotion_slide .swiper-wrapper .swiper-slide a p {
+    font-family: 'NeoDunggeunmoPro-Regular';
+    text-align: center;
+    font-size: 2.1rem; margin-top: 250px;
+}
+main .section7 .promotionDesign #promoWrap #promotion_slide .swiper-wrapper .swiper-slide a {}
+main .section7 .promotionDesign #promoWrap #promotion_slide .swiper-wrapper .swiper-slide a:hover:after{opacity:1;}
+main .section7 .promotionDesign #promoWrap #promotion_slide .swiper-wrapper .swiper-slide a::after{
     content:'';
+    opacity: 0;
     background-color:rgba(0,0,0,0.3);
     display: block;
     width:300px; height: 623px;
@@ -219,9 +225,13 @@ main .section7 .promotionDesign #promoWrap .swiper-button-next {position:absolut
 /* section 8 */
 main .section8 {}
 main .section8 .landing {}
-main .section8 .landing h2 {}
-main .section8 .landing .landingCon {}
-main .section8 .landing .landingCon img {}
+main .section8 .landing h2 {font-size: 3.2rem; letter-spacing: -0.05em; text-align: center; margin-bottom: 40px;}
+main .section8 .landing .landingCon {display: flex; justify-content: center;}
+main .section8 .landing .landingCon a {display:block; overflow: hidden; border-radius: 10px; border:3px solid #000; width:958px; height: 623px;}
+main .section8 .landing .landingCon a::after {
+
+}
+main .section8 .landing .landingCon a img {}
 /* section 9 */
 main .section9 {}
 main .section9 .cardNews {}
