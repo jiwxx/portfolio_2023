@@ -20,6 +20,12 @@
     <link rel="stylesheet" type="text/css" href='https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css'>
 </head>
 <body>
+    <!-- 프로모션 클릭시 나타나는 팝업 -->
+    <div id="promotionPopup">
+        <div class="contents">
+            <img src="" alt="">
+        </div>
+    </div>
     <div class="main_bg">
         <header>
             <nav>
@@ -248,8 +254,8 @@
                             <!-- .swiper-wrapper 슬라이드 한장 한장을 묶어주는 슬라이드 영역 틀 -->
                                 <div class="swiper-wrapper">
                                     <!-- .swiper-slide 슬라이드 개별 한장 부모 -->
-                                    <div class="swiper-slide"><a href="#"><img src="./images/promo1.jpg" alt=""></a></div>
-                                    <div class="swiper-slide"><a href="#"><img src="./images/promo2.jpg" alt=""></a></div>
+                                    <div class="swiper-slide"><a href="#"><span>진라면<br>상세페이지</span><img src="./images/promo1.jpg" alt=""></a></div>
+                                    <div class="swiper-slide"><a href="#"><span>수학 독해 학습서<br> 상세페이지</span><img src="./images/promo2.jpg" alt=""></a></div>
                                     <div class="swiper-slide"><a href="#"><p>LOADING...</p></a></div>
                                     <div class="swiper-slide"><a href="#"><p>LOADING...</p></a></div>
                                     <div class="swiper-slide"><a href="#"><p>LOADING...</p></a></div>
@@ -265,7 +271,7 @@
                     <div class="landing">
                         <h2>랜딩페이지</h2>
                         <div class="landingCon">
-                            <a href="http://xixoo928.pe.kr/landing_travel_2023/" target="_blank"><img src="./images/landing.jpg" alt=""></a>
+                            <a href="http://xixoo928.pe.kr/landing_travel_2023/" target="_blank"><span>하와이 랜딩페이지<br> 결과보기</span><img src="./images/landing.jpg" alt=""></a>
                         </div>
                     </div>
                 </div>
@@ -299,7 +305,6 @@
         const cloud = document.querySelectorAll('main > .cloud > a')
         cloud[0].classList.toggle('animation')
         $('#portfolio_wrap').fullpage({
-            scrollBar:true,
             onLeave:function(index,nextIndex){
                 console.log(index,nextIndex)
                 if(index == 1){
