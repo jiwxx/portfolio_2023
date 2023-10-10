@@ -21,7 +21,7 @@
     <style>
         #promotionPopup {
             width:100%; height:100vh;
-            background:rgba(255,255,255,0.5);
+            background:rgba(0,0,0,0.5);
             position:fixed; left:0; top:0; z-index:9999;
             display:none;
         }
@@ -34,11 +34,7 @@
     </style>
 </head>
 <body>
-<<<<<<< HEAD
     <!-- 프로모션 클릭시 나타나는 팝업 -->
-=======
-    <!-- 프로모션 클릭 시 나타나는 팝업 -->
->>>>>>> c19918a287436d2c36f1d8180b886e8328e4f387
     <div id="promotionPopup">
         <div class="contents">
             <img src="" alt="">
@@ -324,10 +320,7 @@
         const cloud = document.querySelectorAll('main > .cloud > a')
         cloud[0].classList.toggle('animation')
         $('#portfolio_wrap').fullpage({
-<<<<<<< HEAD
-=======
             // scrollBar:true,
->>>>>>> c19918a287436d2c36f1d8180b886e8328e4f387
             onLeave:function(index,nextIndex){
                 console.log(index,nextIndex)
                 if(index == 1){
@@ -365,26 +358,26 @@
             },
         })
 
-        // 프로모션 클릭 시 나타나는 팝업 스크립트
-        const promotionDesign_a = document.querySelectorAll('#promotion_slide a')
-        const promotionPopup = document.querySelector('#promotionPopup')
-        const promotionPopup_img = document.querySelector('#promotionPopup img')
-        //console.log(promotionPopup, promotionPopup_img, promotionDesign_a)
+        // // 프로모션 클릭 시 나타나는 팝업 스크립트
+        // const promotionDesign_a = document.querySelectorAll('#promotion_slide a')
+        // const promotionPopup = document.querySelector('#promotionPopup')
+        // const promotionPopup_img = document.querySelector('#promotionPopup img')
+        // //console.log(promotionPopup, promotionPopup_img, promotionDesign_a)
 
-        promotionDesign_a.forEach(function(t,i,a){
-            //console.log(t,i,a)
-            t.addEventListener('click',function(e){
-                e.preventDefault()
-                promotionPopup.style.display = 'block'
-                promotionPopup_img.src = `./images/promo${i+1}.jpg`
-                $.fn.fullpage.setAllowScrolling(false) //풀페이지 스크롤 해제
-            })
-        })
+        // promotionDesign_a.forEach(function(t,i,a){
+        //     //console.log(t,i,a)
+        //     t.addEventListener('click',function(e){
+        //         e.preventDefault()
+        //         promotionPopup.style.display = 'block'
+        //         promotionPopup_img.src = `./images/promo${i+1}.jpg`
+        //         $.fn.fullpage.setAllowScrolling(false) //풀페이지 스크롤 해제
+        //     })
+        // })
 
-        promotionPopup.addEventListener('click',function(){
-            promotionPopup.style.display = 'none'
-            $.fn.fullpage.setAllowScrolling(true) //풀페이지 스크롤 재개
-        })
+        // promotionPopup.addEventListener('click',function(){
+        //     promotionPopup.style.display = 'none'
+        //     $.fn.fullpage.setAllowScrolling(true) //풀페이지 스크롤 재개
+        // })
 
 
     </script>
